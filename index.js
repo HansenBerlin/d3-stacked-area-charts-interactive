@@ -11,7 +11,7 @@ let mobileBreakpoint = 800;
 let isCurrency = false;
 
 // Load and process the data
-d3.csv("NTDOY.csv").then((data) => {
+d3.csv("data.csv").then((data) => {
   // Parse the Date and convert the Close to a number
   const parseDate = d3.timeParse("%Y-%m-%d");
   data.forEach((d) => {
